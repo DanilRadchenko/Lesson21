@@ -1,0 +1,72 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "f1 f1 f2 f3"
+      "f1 f1 f2 f4"
+      "f1 f1 f5 f5";
+  }
+  
+  .f1 { grid-area: f1; background-color: gray;  }
+  
+  .f2 { grid-area: f2; background-color: greenyellow; }
+  
+  .f3 { grid-area: f3; background-color: hotpink; }
+  
+  .f4 { grid-area: f4; background-color: indigo; color: blanchedalmond; }
+  
+  .f5 { grid-area: f5;  background-color: khaki;}
+.umg{
+    width:50px;
+    height: 50px;
+    border-radius: 100px;
+    margin-bottom: 5px;
+}
+.dawmm{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-top: 200px;
+margin-left: 70px;
+}
+.reda{
+    margin-left: 100px;
+    border: solid 2px black;
+    padding: 10px 250px;
+    box-shadow: 10px 5px 5px black;
+    }
+    h2{
+        padding: 5px;
+    }
+    @media screen and (max-width:767px) {
+        .container{
+            grid-template-areas: 
+            "f1"
+            "f1"
+            "f1"
+            "f2"
+            "f3"
+            "f4"
+            "f5";
+        }
+        .dawmm{
+            margin-left: 10px;
+        }
+        .reda{
+            margin-left: 100px;
+    border: solid 2px black;
+    padding: 10px 50px;
+    box-shadow: 10px 5px 5px black;
+        }
+        .f1{
+            width:400px;
+        }
+        .lol{
+            width:0px;
+        }
+        h2{
+            font-size: 15px;
+        }
+    }
